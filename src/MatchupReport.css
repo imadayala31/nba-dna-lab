@@ -1,0 +1,537 @@
+
+/* ==========================================================
+   NBA DNA LAB — THE FRONT OFFICE
+   THE MATCHUP REPORT / EDITORIAL REDESIGN
+   ========================================================== */
+
+.matchup-report,
+.matchup-report * {
+  box-sizing: border-box;
+}
+
+.matchup-report {
+  width: 100%;
+  min-width: 0;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid #dfe3e8;
+  color: #17191d;
+}
+
+.matchup-report-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.matchup-report-eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  color: #7c858f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.matchup-report-heading h3 {
+  margin: 0;
+  color: #111318;
+  font-size: clamp(43px, 5.2vw, 74px);
+  font-weight: 900;
+  line-height: 0.97;
+  letter-spacing: -0.075em;
+}
+
+.matchup-report-heading p {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #68717c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.matchup-report-edition {
+  flex-shrink: 0;
+  padding-bottom: 6px;
+  color: #8c949e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+/* PLAYER IDENTIFICATION */
+
+.matchup-report-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+  padding: 23px 28px;
+  border: 1px solid #e2e6eb;
+  background: #f7f8fa;
+}
+
+.matchup-report-legend > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+
+.matchup-legend-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.matchup-report-legend strong {
+  color: #1a1e24;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.matchup-report-legend div > span:last-child {
+  color: #79828d;
+  font-size: 12px;
+}
+
+.matchup-legend-vs {
+  flex-shrink: 0;
+  color: #a0a8b2;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* MAIN GRID */
+
+.matchup-report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.matchup-report-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(23px, 2.7vw, 38px);
+  border: 1px solid #dfe4e9;
+  border-top: 5px solid #1d242c;
+  background: #fff;
+}
+
+.matchup-report-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #79828c;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.11em;
+}
+
+.matchup-report-status {
+  color: #535e6a;
+  text-align: right;
+}
+
+.matchup-report-card h4 {
+  margin: 26px 0 10px;
+  color: #15181d;
+  font-size: clamp(30px, 3.1vw, 44px);
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -0.065em;
+}
+
+.matchup-report-subtitle {
+  max-width: 540px;
+  margin: 0 0 27px;
+  color: #6e7782;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.matchup-report-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* STAT PAIRS */
+
+.matchup-stat-block {
+  min-width: 0;
+}
+
+.matchup-stat-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 13px;
+}
+
+.matchup-stat-heading strong {
+  color: #333b45;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+}
+
+.matchup-stat-heading > span {
+  color: #828b96;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.matchup-stat-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.matchup-stat-player {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid #e7eaee;
+  border-top: 4px solid var(--report-team);
+  background: #f5f7f9;
+}
+
+.matchup-stat-name {
+  color: #505a65;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.matchup-stat-value {
+  display: block;
+  margin: 13px 0 11px;
+  color: var(--report-team);
+  font-size: clamp(34px, 3.8vw, 54px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.075em;
+  font-variant-numeric: tabular-nums;
+}
+
+.matchup-stat-team {
+  margin-top: auto;
+  color: #858e98;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* ASSIST-TO-TURNOVER RATIO */
+
+.matchup-ratio-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.matchup-ratio-heading strong {
+  color: #333b45;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+}
+
+.matchup-ratio-heading span {
+  color: #828b96;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.matchup-ratio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.matchup-ratio-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 18px;
+  border-left: 4px solid var(--report-team);
+  background: #f5f7f9;
+}
+
+.matchup-ratio-grid span {
+  color: #59636e;
+  font-size: 12px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.matchup-ratio-grid strong {
+  color: var(--report-team);
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.065em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* EVIDENCE QUALITY */
+
+.matchup-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.matchup-evidence-player {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 20px 17px;
+  border-top: 4px solid var(--report-team);
+  background: #f5f7f9;
+}
+
+.matchup-evidence-player > span {
+  color: #59636e;
+  font-size: 13px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.matchup-evidence-player > strong {
+  margin-top: 15px;
+  color: var(--report-team);
+  font-size: clamp(31px, 3.5vw, 49px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.07em;
+  font-variant-numeric: tabular-nums;
+}
+
+.matchup-evidence-player > small {
+  margin-top: 8px;
+  color: #89929c;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+.matchup-evidence-season {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  margin-top: 19px;
+  padding-top: 13px;
+  border-top: 1px solid #dfe4e9;
+}
+
+.matchup-evidence-season span {
+  color: #68727e;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.matchup-evidence-explainer {
+  padding: 19px;
+  border: 1px solid #e2e6eb;
+  background: #fafbfc;
+}
+
+.matchup-evidence-explainer strong {
+  display: block;
+  margin-bottom: 9px;
+  color: #343d47;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.matchup-evidence-explainer p {
+  margin: 0;
+  color: #6e7883;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* EDITORIAL TAKEAWAY */
+
+.matchup-report-takeaway {
+  margin-top: auto;
+  padding: 22px 23px;
+  border-left: 4px solid #252d37;
+  background: #f1f3f6;
+}
+
+.matchup-report-takeaway > span {
+  display: block;
+  margin-bottom: 11px;
+  color: #39424d;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.matchup-report-takeaway p {
+  margin: 0;
+  color: #39434f;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+/* FOOTER */
+
+.matchup-report-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 24px;
+  padding: 25px 0;
+  border-top: 1px solid #e0e5e9;
+}
+
+.matchup-report-footer strong {
+  flex-shrink: 0;
+  color: #2c3540;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.matchup-report-footer p {
+  max-width: 780px;
+  margin: 0;
+  color: #7e8893;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .matchup-report-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .matchup-stat-value {
+    font-size: clamp(38px, 6vw, 60px);
+  }
+}
+
+@media (max-width: 760px) {
+  .matchup-report {
+    margin-top: 38px;
+    padding-top: 36px;
+  }
+
+  .matchup-report-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .matchup-report-heading h3 {
+    font-size: clamp(39px, 8vw, 58px);
+  }
+
+  .matchup-report-heading p {
+    font-size: 14px;
+  }
+
+  .matchup-report-legend {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 20px;
+  }
+
+  .matchup-legend-vs {
+    margin-left: 23px;
+  }
+
+  .matchup-report-card {
+    padding: 24px 20px;
+  }
+
+  .matchup-report-card h4 {
+    font-size: clamp(30px, 6vw, 40px);
+  }
+
+  .matchup-report-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .matchup-stat-pair,
+  .matchup-ratio-grid,
+  .matchup-evidence-grid {
+    gap: 8px;
+  }
+
+  .matchup-stat-player {
+    min-height: 137px;
+    padding: 14px 11px;
+  }
+
+  .matchup-stat-name {
+    font-size: 11px;
+  }
+
+  .matchup-stat-value {
+    font-size: clamp(29px, 9vw, 42px);
+  }
+
+  .matchup-stat-team {
+    font-size: 9px;
+  }
+
+  .matchup-ratio-grid > div,
+  .matchup-evidence-player {
+    padding: 15px 11px;
+  }
+
+  .matchup-evidence-player > strong {
+    font-size: 31px;
+  }
+
+  .matchup-report-takeaway {
+    padding: 19px 17px;
+  }
+
+  .matchup-report-takeaway p {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .matchup-report *,
+  .matchup-report *::before,
+  .matchup-report *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

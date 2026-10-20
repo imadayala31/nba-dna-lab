@@ -1,0 +1,63 @@
+.historical-veteran-panel {
+  margin: 24px 0;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 18px;
+  background: #101923;
+  color: #f4f7fb;
+}
+.historical-veteran-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.historical-veteran-photo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: rgba(255,255,255,.05);
+  border-radius: 14px;
+}
+.historical-veteran-kicker {
+  color: #74d9b2;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+}
+.historical-veteran-header h3 {
+  margin: 7px 0;
+  font-size: 23px;
+}
+.historical-veteran-note {
+  color: #f5c96b;
+  font-size: 11px;
+  font-weight: 700;
+}
+.historical-veteran-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.historical-veteran-stats strong {
+  display: block;
+  font-size: 20px;
+  margin-top: 4px;
+}
+.historical-veteran-court {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.historical-veteran-court svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.historical-veteran-footer {
+  color: #9caab8;
+  font-size: 12px;
+  margin-top: 16px;
+}

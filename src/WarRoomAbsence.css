@@ -1,0 +1,276 @@
+
+/* NBA_DNA_STAGE33_4B */
+
+.wra-panel {
+  padding: 25px 38px;
+  border-bottom: 1px solid #dce1df;
+  background: #fff;
+  color: #1b2e37;
+}
+
+.wra-header h3 {
+  margin: 7px 0;
+  font-size: clamp(24px, 3vw, 34px);
+  letter-spacing: -.045em;
+}
+
+.wra-header p {
+  max-width: 790px;
+  color: #61727a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.wra-controls {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.wra-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 230px;
+}
+
+.wra-controls label > span,
+.wra-state-control > span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  color: #728087;
+}
+
+.wra-controls select {
+  border: 1px solid #cbd4d1;
+  border-radius: 0;
+  background: #fff;
+  color: #263d49;
+  font: inherit;
+  font-size: 13px;
+  padding: 12px;
+  min-height: 44px;
+}
+
+.wra-state-control {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.wra-states {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wra-states button {
+  border: 1px solid #cbd4d1;
+  background: #fff;
+  color: #344953;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.wra-states button.wra-active {
+  border-color: var(--wr-accent);
+  box-shadow: inset 0 -3px 0 var(--wr-accent);
+  background: #f0f3f0;
+}
+
+.wra-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #dce1df;
+  border-bottom: 1px solid #dce1df;
+  margin-bottom: 24px;
+}
+
+.wra-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 15px;
+}
+
+.wra-summary > div:first-child {
+  padding-left: 0;
+}
+
+.wra-summary > div + div {
+  border-left: 1px solid #dce1df;
+}
+
+.wra-summary small {
+  color: #78868b;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .07em;
+}
+
+.wra-summary strong {
+  font-size: clamp(24px, 3vw, 37px);
+  letter-spacing: -.05em;
+}
+
+.wra-rotation-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.wra-rotation-heading h4,
+.wra-recipients h4 {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: -.035em;
+}
+
+.wra-rotation-heading span {
+  font-size: 9px;
+  color: #79888e;
+  font-weight: 800;
+  letter-spacing: .07em;
+}
+
+.wra-player {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr) 85px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid #e3e8e5;
+}
+
+.wra-player-name {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.wra-player-name strong {
+  font-size: 12px;
+}
+
+.wra-player-name small {
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--wr-accent);
+}
+
+.wra-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wra-track {
+  height: 8px;
+  background: #f0f2f0;
+}
+
+.wra-baseline {
+  height: 100%;
+  background: #cbd5d1;
+}
+
+.wra-scenario {
+  height: 100%;
+  background: var(--wr-accent);
+}
+
+.wra-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+  font-size: 11px;
+}
+
+.wra-values span {
+  color: #87949a;
+}
+
+.wra-recipients {
+  margin-top: 24px;
+}
+
+.wra-recipients h4 {
+  margin-bottom: 12px;
+}
+
+.wra-recipients > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid #e3e8e5;
+  padding: 11px 0;
+  font-size: 12px;
+}
+
+.wra-recipients > div strong {
+  color: var(--wr-accent);
+}
+
+.wra-recipients p {
+  font-size: 12px;
+  color: #61727a;
+}
+
+.wra-disclosure {
+  border-left: 3px solid var(--wr-accent);
+  background: #f5f6f3;
+  padding: 18px;
+  margin-top: 24px;
+}
+
+.wra-disclosure strong {
+  font-size: 10px;
+  letter-spacing: .09em;
+}
+
+.wra-disclosure p {
+  font-size: 11px;
+  line-height: 1.65;
+  color: #61727a;
+}
+
+.wra-disclosure p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .wra-panel {
+    padding: 20px 19px;
+  }
+
+  .wra-player {
+    grid-template-columns: 110px minmax(0, 1fr) 65px;
+    gap: 7px;
+  }
+
+  .wra-player-name strong {
+    font-size: 10px;
+  }
+
+  .wra-values {
+    font-size: 9px;
+  }
+
+  .wra-summary > div {
+    padding: 14px 9px;
+  }
+
+  .wra-summary small {
+    font-size: 8px;
+  }
+}
+

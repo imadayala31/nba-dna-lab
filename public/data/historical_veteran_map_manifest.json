@@ -1,0 +1,59 @@
+{
+  "season": "2024-25",
+  "competition": "REGULAR SEASON",
+  "source": "ESPN",
+  "historical_fallback_only": true,
+  "geometry_certified": false,
+  "players": [
+    {
+      "athlete_id": "6606",
+      "player": "Damian Lillard",
+      "season": "2024-25",
+      "coverage": "PARTIAL_VERIFIED",
+      "headshot_url": "/images/players/espn_6606.png",
+      "json_url": "/data/shot_dna_2024_25_map/player_6606.json",
+      "mapped_shots": 981,
+      "out_of_half_court_excluded": 11
+    },
+    {
+      "athlete_id": "2991230",
+      "player": "Fred VanVleet",
+      "season": "2024-25",
+      "coverage": "PARTIAL_VERIFIED",
+      "headshot_url": "/images/players/espn_2991230.png",
+      "json_url": "/data/shot_dna_2024_25_map/player_2991230.json",
+      "mapped_shots": 721,
+      "out_of_half_court_excluded": 12
+    },
+    {
+      "athlete_id": "6442",
+      "player": "Kyrie Irving",
+      "season": "2024-25",
+      "coverage": "PARTIAL_VERIFIED",
+      "headshot_url": "/images/players/espn_6442.png",
+      "json_url": "/data/shot_dna_2024_25_map/player_6442.json",
+      "mapped_shots": 925,
+      "out_of_half_court_excluded": 20
+    },
+    {
+      "athlete_id": "3136196",
+      "player": "Trey Lyles",
+      "season": "2024-25",
+      "coverage": "PARTIAL_VERIFIED",
+      "headshot_url": "/images/players/espn_3136196.png",
+      "json_url": "/data/shot_dna_2024_25_map/player_3136196.json",
+      "mapped_shots": 363,
+      "out_of_half_court_excluded": 11
+    },
+    {
+      "athlete_id": "4396993",
+      "player": "Tyrese Haliburton",
+      "season": "2024-25",
+      "coverage": "PARTIAL_VERIFIED",
+      "headshot_url": "/images/players/espn_4396993.png",
+      "json_url": "/data/shot_dna_2024_25_map/player_4396993.json",
+      "mapped_shots": 988,
+      "out_of_half_court_excluded": 18
+    }
+  ]
+}

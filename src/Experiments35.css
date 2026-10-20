@@ -1,0 +1,436 @@
+/* NBA_DNA_STAGE35_2_EXPERIMENTS */
+
+.exp35-chapter {
+  --exp35-ink: #1b2c39;
+  --exp35-muted: #607381;
+  --exp35-line: #c4cfd6;
+  background: #e9edf0;
+  color: var(--exp35-ink);
+  padding: 0 0 64px;
+  isolation: isolate;
+}
+
+.exp35-intro {
+  padding: 45px clamp(20px, 5vw, 84px) 42px;
+  border-top: 1px solid #bac8d1;
+  border-bottom: 1px solid var(--exp35-line);
+}
+
+.exp35-topline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--exp35-line);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .16em;
+  color: var(--exp35-muted);
+}
+
+.exp35-intro-content {
+  max-width: 850px;
+  padding: 58px 0 44px;
+}
+
+.exp35-eyebrow, .exp35-section-number {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  color: #567d9e;
+}
+
+.exp35-intro h2 {
+  margin: 12px 0 18px;
+  font-size: clamp(52px, 8vw, 112px);
+  line-height: .94;
+  letter-spacing: -.065em;
+  font-weight: 900;
+}
+
+.exp35-intro h2 em,
+.exp35-section-heading h3 em {
+  font-style: normal;
+  color: #6484a0;
+}
+
+.exp35-intro-content p {
+  max-width: 620px;
+  font-size: clamp(15px, 1.6vw, 19px);
+  line-height: 1.65;
+  color: #526777;
+}
+
+.exp35-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--exp35-line);
+}
+
+.exp35-index a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--exp35-ink);
+  transition: background .2s ease;
+}
+
+.exp35-index a + a {
+  border-left: 1px solid var(--exp35-line);
+}
+
+.exp35-index a:hover,
+.exp35-index a:focus-visible {
+  background: #f8fafb;
+}
+
+.exp35-index a span {
+  font-size: 10px;
+  letter-spacing: .14em;
+  font-weight: 800;
+  color: #567d9e;
+}
+
+.exp35-index a strong {
+  font-size: clamp(14px, 1.5vw, 20px);
+  letter-spacing: -.025em;
+}
+
+.exp35-index a small {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--exp35-muted);
+}
+
+.exp35-experiment {
+  padding-top: 30px;
+  scroll-margin-top: 95px;
+}
+
+.exp35-experiment + .exp35-experiment {
+  margin-top: 72px;
+  border-top: 1px solid #b8c7d1;
+  padding-top: 50px;
+}
+
+.exp35-section-heading {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 2fr;
+  gap: 28px;
+  padding: 12px clamp(20px, 5vw, 84px) 35px;
+  align-items: start;
+}
+
+.exp35-section-heading h3 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 55px);
+  line-height: 1.04;
+  letter-spacing: -.05em;
+  font-weight: 850;
+}
+
+.exp35-section-heading p {
+  max-width: 610px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--exp35-muted);
+}
+
+@media (max-width: 760px) {
+  .exp35-intro { padding: 28px 20px; }
+  .exp35-intro-content { padding: 40px 0 30px; }
+  .exp35-index { grid-template-columns: 1fr; }
+  .exp35-index a + a {
+    border-left: 0;
+    border-top: 1px solid var(--exp35-line);
+  }
+  .exp35-index a { padding: 18px; }
+  .exp35-section-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 12px 20px 26px;
+  }
+  .exp35-experiment + .exp35-experiment {
+    margin-top: 44px;
+    padding-top: 32px;
+  }
+}
+
+/* NBA_DNA_STAGE35_2C_CONNECTED */
+
+/* Three research environments */
+.exp35-chapter {
+  background: #e9edf0;
+  padding-bottom: 0;
+}
+
+/* 01 — Hidden Twin / Ice Blue */
+.exp35-experiment#stage35-twin {
+  background: #dce9f3;
+  --exp35-accent: #3c7199;
+}
+
+/* 02 — Evidence Room / Investigation Paper */
+.exp35-experiment#stage35-evidence {
+  background: #e9e8e3;
+  --exp35-accent: #76549a;
+}
+
+/* 03 — War Room / GM Operations */
+.exp35-experiment#stage35-war {
+  background: #dde5e2;
+  --exp35-accent: #356a62;
+}
+
+/* Compact editorial introductions */
+.exp35-experiment {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  scroll-margin-top: 95px;
+}
+
+.exp35-experiment + .exp35-experiment {
+  margin-top: 0;
+  border-top: 9px solid #f8fafb;
+  padding-top: 28px;
+}
+
+.exp35-section-heading {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 22px;
+  padding-top: 8px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(35, 57, 71, .16);
+}
+
+.exp35-section-number {
+  color: var(--exp35-accent);
+}
+
+.exp35-section-heading h3 {
+  margin: 0 0 8px;
+  font-size: clamp(23px, 2.7vw, 37px);
+  line-height: 1.06;
+}
+
+.exp35-section-heading h3 em {
+  color: var(--exp35-accent);
+}
+
+.exp35-section-heading p {
+  max-width: 640px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Hidden Twin search stays visually prominent */
+#stage35-twin input[type='text'],
+#stage35-twin input[type='search'] {
+  background: #fff;
+  border-color: #b5ccdd;
+}
+
+#stage35-twin input:focus-visible {
+  outline: 2px solid #427eaa;
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .exp35-section-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-bottom: 15px;
+  }
+
+  .exp35-experiment {
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+
+  .exp35-experiment + .exp35-experiment {
+    padding-top: 22px;
+  }
+}
+
+/* NBA_DNA_STAGE35_3B_COLOR_ISOLATION */
+
+/* Three independent editorial environments */
+
+.exp35-chapter {
+  background: #f6f7f6;
+  overflow: clip;
+}
+
+.exp35-experiment {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  border-radius: 0;
+  overflow: clip;
+}
+
+/* EVIDENCE — investigation paper */
+
+#stage35-evidence.exp35-experiment {
+  --exp35-accent: #76549a;
+  --exp35-muted: #65616a;
+  background: #e9e8e3;
+  border-top: 12px solid #fff;
+  border-bottom: 0;
+}
+
+#stage35-evidence > .exp35-section-heading {
+  background: #e9e8e3;
+  border-bottom: 1px solid #ccc8d0;
+}
+
+#stage35-evidence .exp35-section-number {
+  color: #76549a;
+}
+
+/* WAR ROOM — operations / sage */
+
+#stage35-war.exp35-experiment {
+  --exp35-accent: #356a62;
+  --exp35-muted: #526760;
+  background: #dde5e2;
+  border-top: 12px solid #fff;
+  border-bottom: 0;
+}
+
+#stage35-war > .exp35-section-heading {
+  background: #dde5e2;
+  border-bottom: 1px solid #b9c9c3;
+}
+
+#stage35-war .exp35-section-number {
+  color: #356a62;
+}
+
+/* War Room's outer canvas belongs to its own
+   editorial environment. Internal cards retain
+   their existing colors and franchise accents. */
+
+#stage35-war > .wr-section {
+  background: #eef3f0;
+}
+
+/* Keep chapter headings subordinate to the
+   experiment's own main title. */
+
+#stage35-evidence > .exp35-section-heading,
+#stage35-war > .exp35-section-heading {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 0;
+  gap: 20px;
+}
+
+#stage35-evidence .exp35-section-heading h3,
+#stage35-war .exp35-section-heading h3 {
+  font-size: clamp(21px, 2.3vw, 31px);
+  letter-spacing: -.035em;
+  margin-bottom: 5px;
+}
+
+#stage35-evidence .exp35-section-heading p,
+#stage35-war .exp35-section-heading p {
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 680px;
+}
+
+/* Avoid the old spacing between experiments */
+
+#stage35-evidence.exp35-experiment +
+#stage35-war.exp35-experiment {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  #stage35-evidence > .exp35-section-heading,
+  #stage35-war > .exp35-section-heading {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    padding: 18px 20px;
+  }
+
+  #stage35-evidence .exp35-section-heading h3,
+  #stage35-war .exp35-section-heading h3 {
+    font-size: 24px;
+  }
+}
+
+/* NBA_DNA_STAGE35_3C_CLEAN_TRANSITIONS */
+
+/* Clean chapter-to-experiment transition */
+.exp35-intro {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+/* Remove empty-looking blue padding bands */
+#stage35-twin.exp35-experiment {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Preserve the blue ONLY behind the intro heading */
+#stage35-twin > .exp35-section-heading {
+  background: #dce9f3;
+  margin-bottom: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #c8d9e6;
+}
+
+/* Hidden Twin content uses its own white canvas */
+#stage35-twin > :not(.exp35-section-heading) {
+  background-color: #ffffff;
+}
+
+/* Clean boundary before Evidence Room */
+#stage35-evidence.exp35-experiment {
+  margin-top: 0;
+  border-top: 10px solid #ffffff;
+}
+
+/* Remove decorative trailing blue strip */
+#stage35-twin.exp35-experiment +
+#stage35-evidence.exp35-experiment {
+  margin-top: 0;
+}
+
+/* Maintain a distinct War Room boundary */
+#stage35-war.exp35-experiment {
+  margin-top: 0;
+  border-top: 10px solid #ffffff;
+}
+
+@media (max-width: 760px) {
+  #stage35-twin > .exp35-section-heading {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+/* NBA_DNA_STAGE35_5_EDITORIAL_NUMBERING */
+.exp35-editorial-number {
+  margin: 0 0 18px;
+  color: #527895;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}

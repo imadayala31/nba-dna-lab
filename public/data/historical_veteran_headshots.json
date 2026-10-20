@@ -1,0 +1,41 @@
+{
+  "source": "ESPN NBA Player Headshots",
+  "image_type": "PLAYER_PORTRAIT",
+  "players": [
+    {
+      "athlete_id": "6606",
+      "player": "Damian Lillard",
+      "image_url": "/images/players/espn_6606.png",
+      "status": "DOWNLOADED",
+      "source": "ESPN"
+    },
+    {
+      "athlete_id": "2991230",
+      "player": "Fred VanVleet",
+      "image_url": "/images/players/espn_2991230.png",
+      "status": "DOWNLOADED",
+      "source": "ESPN"
+    },
+    {
+      "athlete_id": "6442",
+      "player": "Kyrie Irving",
+      "image_url": "/images/players/espn_6442.png",
+      "status": "DOWNLOADED",
+      "source": "ESPN"
+    },
+    {
+      "athlete_id": "3136196",
+      "player": "Trey Lyles",
+      "image_url": "/images/players/espn_3136196.png",
+      "status": "DOWNLOADED",
+      "source": "ESPN"
+    },
+    {
+      "athlete_id": "4396993",
+      "player": "Tyrese Haliburton",
+      "image_url": "/images/players/espn_4396993.png",
+      "status": "DOWNLOADED",
+      "source": "ESPN"
+    }
+  ]
+}

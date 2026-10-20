@@ -1,0 +1,158 @@
+
+/* NBA DNA LAB — STAGE 29A / EXECUTIVE BLUE */
+
+:root {
+  --dna-mineral: #F7F7F5;
+  --dna-navy: #172B43;
+  --dna-steel: #315D73;
+  --dna-copper: #C18A57;
+  --dna-silver: #E2E4E5;
+}
+
+.hero {
+  background: var(--dna-mineral);
+  color: var(--dna-navy);
+}
+
+.hero .hero-topline,
+.hero .eyebrow {
+  color: var(--dna-steel);
+}
+
+.hero .hero-copy h1 {
+  color: var(--dna-navy);
+}
+
+.hero .orange-dot {
+  color: var(--dna-copper);
+}
+
+.hero .hero-lead {
+  color: var(--dna-steel);
+}
+
+.hero .hero-lead strong {
+  color: var(--dna-navy);
+}
+
+.hero .hero-description {
+  color: #435469;
+}
+
+.stage29-story {
+  max-width: 620px;
+}
+
+.stage29-tools {
+  color: #435469;
+  line-height: 1.75;
+  margin: 15px 0 0;
+  font-size: clamp(14px, 1.3vw, 16px);
+}
+
+.stage29-signature {
+  margin: 20px 0 0;
+  padding-left: 15px;
+  border-left: 3px solid var(--dna-copper);
+  color: var(--dna-steel);
+  line-height: 1.6;
+}
+
+.stage29-signature strong {
+  color: var(--dna-navy);
+}
+
+.hero .primary-link {
+  background: var(--dna-navy);
+  color: #FFFFFF;
+  border-color: var(--dna-navy);
+}
+
+.hero .primary-link:hover {
+  background: var(--dna-steel);
+  border-color: var(--dna-steel);
+}
+
+.stage29-challenge {
+  background: var(--dna-navy);
+  color: #FFFFFF;
+  padding: clamp(44px, 6vw, 88px) clamp(22px, 5vw, 72px);
+  scroll-margin-top: 80px;
+}
+
+.stage29-challenge-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.stage29-challenge-top,
+.stage29-challenge-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #D5B18C;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.stage29-challenge-top {
+  border-bottom: 1px solid rgba(255,255,255,0.23);
+  padding-bottom: 17px;
+}
+
+.stage29-challenge h2 {
+  color: #FFFFFF;
+  max-width: 960px;
+  margin: 36px 0 20px;
+  font-size: clamp(42px, 7vw, 94px);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 900;
+}
+
+.stage29-challenge h2 em {
+  color: #D5B18C;
+  font-style: normal;
+}
+
+.stage29-challenge-lead {
+  max-width: 720px;
+  color: #F0F3F5;
+  font-size: clamp(18px, 2.1vw, 25px);
+  line-height: 1.5;
+}
+
+.stage29-challenge-detail {
+  max-width: 670px;
+  margin-top: 17px;
+  color: #CBD6DF;
+  line-height: 1.75;
+}
+
+.stage29-challenge-bottom {
+  margin-top: 38px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.23);
+}
+
+.stage29-challenge-bottom span:last-child {
+  font-size: 24px;
+}
+
+@media (max-width: 680px) {
+  .stage29-challenge-top {
+    flex-wrap: wrap;
+  }
+
+  .stage29-challenge h2 {
+    letter-spacing: -0.03em;
+  }
+
+  .stage29-tools {
+    line-height: 1.6;
+  }
+}
+

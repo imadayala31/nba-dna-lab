@@ -1,0 +1,351 @@
+
+/* NBA_DNA_STAGE31B1 */
+
+.domino-effect {
+  background: #f2f5fa;
+  color: #14243b;
+  padding: 90px 24px;
+  scroll-margin-top: 20px;
+}
+
+.domino-inner {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.domino-overline,
+.domino-subheading,
+.domino-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.domino-overline {
+  border-bottom: 1px solid #cad5e3;
+  padding-bottom: 18px;
+  color: #52657e;
+  font-size: 11px;
+  letter-spacing: .12em;
+  font-weight: 800;
+}
+
+.domino-header {
+  padding: 65px 0 45px;
+}
+
+.domino-kicker {
+  color: #2761bf;
+  font-size: 11px;
+  letter-spacing: .18em;
+  font-weight: 800;
+}
+
+.domino-header h2 {
+  font-size: clamp(48px, 8vw, 106px);
+  line-height: .95;
+  letter-spacing: -.07em;
+  margin: 20px 0 26px;
+  font-weight: 900;
+}
+
+.domino-header h2 em {
+  color: #2864db;
+  font-style: normal;
+}
+
+.domino-header p {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #51627b;
+}
+
+.domino-context {
+  background: #fff;
+  border: 1px solid #d5dfeb;
+  border-radius: 12px;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.domino-context span,
+.domino-stats span,
+.domino-insight > span {
+  font-size: 10px;
+  letter-spacing: .13em;
+  color: #64758c;
+  font-weight: 800;
+}
+
+.domino-context h3 {
+  margin: 8px 0;
+  font-size: 26px;
+}
+
+.domino-context p {
+  margin: 0;
+  color: #62728a;
+}
+
+.domino-switch {
+  display: flex;
+  gap: 6px;
+  background: #e9eff7;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.domino-switch button {
+  border: 0;
+  padding: 13px 16px;
+  background: transparent;
+  color: #3c5271;
+  border-radius: 5px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.domino-switch button.active {
+  background: #214e9d;
+  color: #fff;
+}
+
+.domino-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.domino-stats > div {
+  background: #fff;
+  border: 1px solid #d5dfeb;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.domino-stats strong {
+  font-size: clamp(28px, 3vw, 44px);
+  letter-spacing: -.05em;
+}
+
+.domino-stats strong.domino-name {
+  font-size: clamp(20px, 2vw, 29px);
+}
+
+.domino-stats small {
+  color: #6b7d94;
+  font-weight: 700;
+}
+
+.domino-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+  gap: 20px;
+}
+
+.domino-ranking,
+.domino-insight {
+  background: #fff;
+  border: 1px solid #d5dfeb;
+  border-radius: 12px;
+  padding: 26px;
+}
+
+.domino-subheading {
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.domino-subheading h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.domino-subheading span {
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: #6c7b90;
+}
+
+.domino-recipient {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.domino-rank {
+  color: #8b9aaf;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.domino-portrait {
+  width: 64px;
+  height: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e7eef9;
+}
+
+.domino-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.domino-portrait span {
+  align-self: center;
+  font-weight: 900;
+  color: #7890b0;
+}
+
+.domino-recipient-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.domino-recipient-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.domino-recipient-title strong {
+  overflow-wrap: anywhere;
+}
+
+.domino-recipient-title span {
+  color: #245cbe;
+  white-space: nowrap;
+  font-weight: 900;
+}
+
+.domino-bar {
+  height: 9px;
+  border-radius: 10px;
+  background: #e8eef7;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.domino-bar > div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2864db, #6da5ff);
+}
+
+.domino-recipient-body small {
+  color: #64758c;
+}
+
+.domino-insight {
+  background: #19365c;
+  color: #fff;
+}
+
+.domino-insight > span {
+  color: #a9c8ff;
+}
+
+.domino-insight h3 {
+  font-size: 32px;
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  margin: 24px 0 35px;
+}
+
+.domino-insight > div {
+  padding: 20px 0;
+  border-top: 1px solid #476183;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.domino-insight > div span {
+  font-size: 10px;
+  color: #bbcee7;
+  letter-spacing: .1em;
+}
+
+.domino-insight strong {
+  font-size: 37px;
+}
+
+.domino-insight strong small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.domino-insight p {
+  margin-top: 30px;
+  color: #c2d1e5;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.domino-footer {
+  align-items: center;
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid #cbd6e5;
+  color: #61738c;
+  font-size: 12px;
+}
+
+.domino-empty {
+  padding: 28px;
+  color: #64758c;
+}
+
+@media (max-width: 850px) {
+  .domino-main,
+  .domino-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .domino-context,
+  .domino-overline,
+  .domino-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .domino-switch {
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .domino-effect {
+    padding: 65px 16px;
+  }
+
+  .domino-ranking,
+  .domino-insight {
+    padding: 18px;
+  }
+
+  .domino-subheading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

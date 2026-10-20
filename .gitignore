@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# NBA DNA LAB — local backups and working files
+backups/
+backup_stage*/
+stage*_backup_*/
+stage*_final_backup_*/
+stage*_fix_backup_*/
+stage*_safe_backup_*/
+project_audit_stage*/
+rookie_photo_audit/
+rookie_preseason_audit/
+NBA_DNA_EDITORIAL_NUMBERING_AUDIT.txt
+NBA_DNA_STAGE28A_SOURCE_PACK.zip
+*.zip
+.env
+.env.*
+!.env.example
+.Rhistory
+.RData
+.Rproj.user/
+.gitignore.prelaunch-backup
+# NBA DNA LAB — historical source backups
+*.backup_*
+*.stage*_backup*
+*.before_stage*
+*.backup_stage*
+*.prelaunch-backup
+.gitignore.backup_*
+# Local audits and temporary outputs
+public/data/*audit*.csv
+src/*.backup*
+src/*.before_stage*
+public/data/*.backup*
+public/data/*.stage*_backup*

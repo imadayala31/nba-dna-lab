@@ -1,0 +1,321 @@
+
+/* ==========================================================
+   NBA DNA LAB — STAGE 35.5
+   BLIND PLAYER TEST / LIGHT EDITION
+   Editorial scouting interface
+   ========================================================== */
+
+.blind-section {
+  --blind-ink: #182c40;
+  --blind-muted: #65798a;
+  --blind-line: #d9e2e8;
+  --blind-paper: #ffffff;
+  --blind-card-paper: #f5f8fa;
+  --blind-orange: #ec794b;
+
+  background: #ffffff !important;
+  color: var(--blind-ink) !important;
+  border: 0 !important;
+}
+
+.blind-section .blind-shell {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-topline {
+  color: var(--blind-muted) !important;
+  border-color: var(--blind-line) !important;
+}
+
+.blind-section .blind-kicker,
+.blind-section .blind-small,
+.blind-section .blind-clues-label {
+  color: #c76b43 !important;
+}
+
+.blind-section .blind-intro h2,
+.blind-section .blind-intro h2 *,
+.blind-section .blind-game h3 {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-intro h2 em {
+  color: var(--blind-orange) !important;
+  font-style: normal !important;
+}
+
+.blind-section .blind-intro p:not(.blind-kicker) {
+  color: #5b6d7c !important;
+}
+
+.blind-section .blind-game {
+  background: #ffffff !important;
+  color: var(--blind-ink) !important;
+  border: 1px solid var(--blind-line) !important;
+  box-shadow: 0 12px 38px rgba(24,44,64,.035) !important;
+}
+
+.blind-section .blind-game-top {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-select-label {
+  color: var(--blind-muted) !important;
+}
+
+.blind-section .blind-select-label select {
+  background: #ffffff !important;
+  color: var(--blind-ink) !important;
+  border: 1px solid #cbd8e0 !important;
+  color-scheme: light;
+}
+
+.blind-section .blind-card,
+.blind-section .blind-card-inner,
+.blind-section .blind-card-face,
+.blind-section .blind-card-front,
+.blind-section .blind-card-back {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-card {
+  background: var(--blind-card-paper) !important;
+  border: 1px solid #cddae3 !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+
+.blind-section .blind-card-front,
+.blind-section .blind-card-back {
+  background: var(--blind-card-paper) !important;
+  border-color: #cddae3 !important;
+}
+
+.blind-section .blind-card:not(:disabled):hover {
+  border-color: #829daf !important;
+  box-shadow: 0 9px 25px rgba(24,44,64,.07) !important;
+}
+
+.blind-section .blind-card.is-selected {
+  border-color: var(--blind-orange) !important;
+  box-shadow: inset 0 0 0 2px var(--blind-orange) !important;
+}
+
+.blind-section .blind-card-top {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-card-top span {
+  color: #bd704e !important;
+}
+
+.blind-section .blind-clues-content {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-clues-symbol {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1px !important;
+  width: min(180px, 70%) !important;
+  min-height: 110px !important;
+  height: auto !important;
+  margin: 0 auto 12px !important;
+  padding: 12px 8px !important;
+  background: transparent !important;
+  color: var(--blind-ink) !important;
+  font-family: inherit !important;
+  line-height: 1 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.blind-section .blind-dna-mark {
+  display: block;
+  font-size: clamp(56px, 6vw, 92px) !important;
+  font-weight: 900 !important;
+  letter-spacing: -.085em !important;
+  line-height: .95 !important;
+  color: #b7c9d5 !important;
+}
+
+.blind-section .blind-dna-mark-sub {
+  display: block;
+  margin-top: 9px;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: .22em !important;
+  color: #718a9c !important;
+  white-space: nowrap;
+}
+
+.blind-section .blind-clue {
+  background: #ffffff !important;
+  border: 1px solid #d7e1e7 !important;
+  color: var(--blind-ink) !important;
+  box-shadow: none !important;
+}
+
+.blind-section .blind-clue strong {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-clue small,
+.blind-section .blind-clues-lock,
+.blind-section .blind-card-foot {
+  color: var(--blind-muted) !important;
+}
+
+.blind-section .blind-card-stat,
+.blind-section .blind-player-name {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-player-meta,
+.blind-section .blind-card-stat small {
+  color: var(--blind-muted) !important;
+}
+
+.blind-section .blind-photo,
+.blind-section .blind-photo-fallback {
+  background: #e8eef2 !important;
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-primary {
+  background: var(--blind-ink) !important;
+  color: #ffffff !important;
+  border-color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-primary:disabled {
+  opacity: .5 !important;
+}
+
+.blind-section .blind-secondary {
+  background: #ffffff !important;
+  color: var(--blind-ink) !important;
+  border: 1px solid #cbd8e0 !important;
+}
+
+.blind-section .blind-result {
+  background: #f4f8fa !important;
+  color: var(--blind-ink) !important;
+  border: 1px solid var(--blind-line) !important;
+}
+
+.blind-section .blind-result h3 {
+  color: var(--blind-ink) !important;
+}
+
+.blind-section .blind-result p,
+.blind-section .blind-method {
+  color: #637789 !important;
+}
+
+.blind-section .blind-explore button {
+  background: #ffffff !important;
+  color: var(--blind-ink) !important;
+  border: 1px solid #cad8e1 !important;
+}
+
+.blind-section button:focus-visible,
+.blind-section select:focus-visible {
+  outline: 3px solid #e99270 !important;
+  outline-offset: 3px !important;
+}
+
+@media (max-width: 700px) {
+  .blind-section .blind-clues-symbol {
+    min-height: 90px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .blind-section .blind-dna-mark {
+    font-size: 64px !important;
+  }
+}
+
+
+
+/* ==========================================================
+   NBA_DNA_STAGE35_5_1_FINAL_POLISH
+   BLIND PLAYER TEST — SELECTION + INSTRUCTION
+   ========================================================== */
+
+/* Instruction above the player cards */
+
+.blind-section .blind-cards {
+  position: relative;
+}
+
+.blind-section .blind-cards::before {
+  content: "SELECT A PLAYER TO MAKE YOUR PICK";
+  display: block;
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0 0 10px;
+  color: #71879a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.5;
+}
+
+/* Default cards */
+
+.blind-section .blind-card {
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    background-color .2s ease;
+}
+
+/* Selected player — subtle orange editorial accent */
+
+.blind-section .blind-card.is-selected {
+  border: 2px solid #ed8358 !important;
+  box-shadow:
+    0 0 0 3px rgba(237,131,88,.09) !important;
+}
+
+/* Selected card gets a very subtle warm tint */
+
+.blind-section .blind-card.is-selected,
+.blind-section .blind-card.is-selected .blind-card-front {
+  background: #fffaf7 !important;
+}
+
+/* The selection label becomes more prominent */
+
+.blind-section .blind-card.is-selected .blind-card-top span {
+  color: #dc754d !important;
+  font-weight: 900 !important;
+}
+
+/* Accessible keyboard navigation */
+
+.blind-section .blind-card:focus-visible {
+  outline: 3px solid #ed8358 !important;
+  outline-offset: 4px !important;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .blind-section .blind-cards::before {
+    font-size: 9px;
+    letter-spacing: .11em;
+  }
+}
+
+/* Respect reduced motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .blind-section .blind-card {
+    transition: none !important;
+  }
+}
+

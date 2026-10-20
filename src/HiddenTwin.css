@@ -1,0 +1,928 @@
+
+/* NBA_DNA_STAGE30B1 — HIDDEN TWIN */
+
+.hidden-twin {
+  background: #090d14;
+  color: #f4f6fa;
+  padding: clamp(64px, 8vw, 120px) 24px;
+  scroll-margin-top: 24px;
+}
+
+.hidden-twin-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.hidden-twin-eyebrow,
+.hidden-twin-result-heading,
+.hidden-twin-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 10px;
+  letter-spacing: .16em;
+  font-weight: 700;
+  color: #8c9aae;
+}
+
+.hidden-twin-eyebrow {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #283342;
+}
+
+.hidden-twin-header {
+  padding: 60px 0 48px;
+}
+
+.hidden-twin-kicker {
+  font-size: 11px;
+  letter-spacing: .22em;
+  color: #91b7ff;
+  font-weight: 800;
+}
+
+.hidden-twin-header h2 {
+  font-size: clamp(58px, 11vw, 144px);
+  letter-spacing: -.075em;
+  line-height: .92;
+  margin: 20px 0 28px;
+  font-weight: 900;
+}
+
+.hidden-twin-header h2 em {
+  color: #90b6ff;
+  font-style: normal;
+}
+
+.hidden-twin-intro {
+  max-width: 610px;
+  font-size: clamp(16px, 2vw, 21px);
+  line-height: 1.6;
+  color: #b5bfce;
+}
+
+.hidden-twin-search-panel {
+  padding: 26px;
+  background: #111824;
+  border: 1px solid #293548;
+  border-radius: 12px;
+}
+
+.hidden-twin-search-panel label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  margin-bottom: 16px;
+}
+
+.hidden-twin-search-panel input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px 18px;
+  border: 1px solid #39465b;
+  border-radius: 6px;
+  background: #090e17;
+  color: #fff;
+  font: inherit;
+  font-size: 17px;
+}
+
+.hidden-twin-search-panel input:focus-visible,
+.hidden-twin-options button:focus-visible {
+  outline: 2px solid #90b6ff;
+  outline-offset: 3px;
+}
+
+.hidden-twin-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.hidden-twin-options button {
+  min-width: 0;
+  text-align: left;
+  padding: 13px;
+  border: 1px solid #293548;
+  background: #171f2d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden-twin-options button:hover,
+.hidden-twin-options button.is-selected {
+  border-color: #90b6ff;
+  background: #223451;
+}
+
+.hidden-twin-options button span,
+.hidden-twin-options button small {
+  display: block;
+}
+
+.hidden-twin-options button span {
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.hidden-twin-options button small {
+  font-size: 10px;
+  color: #a9b5c7;
+  margin-top: 5px;
+}
+
+.hidden-twin-results {
+  margin-top: 56px;
+}
+
+.hidden-twin-selected {
+  margin-bottom: 38px;
+}
+
+.hidden-twin-selected > span {
+  font-size: 11px;
+  letter-spacing: .16em;
+  color: #90b6ff;
+}
+
+.hidden-twin-selected h3 {
+  font-size: clamp(34px, 5vw, 64px);
+  letter-spacing: -.045em;
+  margin: 12px 0 8px;
+}
+
+.hidden-twin-selected p,
+.hidden-twin-team {
+  color: #9ba9bd;
+}
+
+.hidden-twin-result-heading {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #354153;
+}
+
+.hidden-twin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.hidden-twin-card {
+  padding: 26px;
+  background: #141d2a;
+  border: 1px solid #344154;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.hidden-twin-card:first-child {
+  border-color: #8caef0;
+}
+
+.hidden-twin-card h3 {
+  font-size: clamp(22px, 2.6vw, 32px);
+  letter-spacing: -.035em;
+  margin: 30px 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.hidden-twin-distance {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 30px 0;
+  padding: 22px 0;
+  border-top: 1px solid #354153;
+  border-bottom: 1px solid #354153;
+}
+
+.hidden-twin-distance strong {
+  font-size: 46px;
+  letter-spacing: -.06em;
+  color: #a7c3ff;
+}
+
+.hidden-twin-distance span {
+  font-size: 10px;
+  letter-spacing: .13em;
+  color: #a6b2c3;
+}
+
+.hidden-twin-explanation h4 {
+  font-size: 10px;
+  letter-spacing: .15em;
+  margin: 24px 0 12px;
+  color: #9fbef8;
+}
+
+.hidden-twin-explanation > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #293648;
+  font-size: 12px;
+}
+
+.hidden-twin-explanation small {
+  color: #bdc8d8;
+  white-space: nowrap;
+}
+
+.hidden-twin-empty {
+  text-align: center;
+  padding: 75px 20px;
+  margin-top: 32px;
+  border: 1px dashed #3a4860;
+  border-radius: 8px;
+}
+
+.hidden-twin-empty span {
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: #91b7ff;
+}
+
+.hidden-twin-empty p {
+  font-size: 19px;
+  color: #bdc8d8;
+}
+
+.hidden-twin-method {
+  margin-top: 35px;
+  color: #98a8bc;
+  font-size: 11px;
+  line-height: 1.8;
+  max-width: 900px;
+}
+
+@media (max-width: 850px) {
+  .hidden-twin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hidden-twin-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hidden-twin-eyebrow,
+  .hidden-twin-result-heading {
+    flex-direction: column;
+  }
+
+  .hidden-twin-options {
+    grid-template-columns: 1fr;
+  }
+
+  .hidden-twin-card,
+  .hidden-twin-search-panel {
+    padding: 18px;
+  }
+}
+
+
+
+/* NBA_DNA_STAGE30B2 — VISUAL UPGRADE */
+
+.hidden-twin {
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(65, 108, 183, .12),
+      transparent 48%
+    ),
+    #090d14;
+}
+
+.hidden-twin-card {
+  background: linear-gradient(
+    155deg,
+    #273a55 0%,
+    #1d2c42 55%,
+    #172338 100%
+  );
+  border: 1px solid #526987;
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, .24),
+    inset 0 1px 0 rgba(255, 255, 255, .08);
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.hidden-twin-card:first-child {
+  background: linear-gradient(
+    155deg,
+    #314e77 0%,
+    #263b59 55%,
+    #1c2d47 100%
+  );
+  border-color: #9dc0ff;
+}
+
+.hidden-twin-card:hover {
+  transform: translateY(-4px);
+  border-color: #b1cbfa;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, .35);
+}
+
+.hidden-twin-card h3 {
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+.hidden-twin-distance strong {
+  color: #c1d6ff;
+}
+
+.hidden-twin-card-top,
+.hidden-twin-explanation h4 {
+  color: #b5cfff;
+}
+
+.hidden-twin-team {
+  color: #c3d0e1;
+}
+
+.hidden-twin-portrait {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 185px;
+  margin: 22px 0 8px;
+  overflow: hidden;
+  border-radius: 8px;
+  background:
+    radial-gradient(
+      ellipse at 50% 85%,
+      rgba(134, 176, 249, .38),
+      transparent 65%
+    ),
+    linear-gradient(180deg, #344b69, #1b2a40);
+  border: 1px solid rgba(174, 200, 240, .18);
+}
+
+.hidden-twin-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.hidden-twin-portrait-fallback {
+  align-self: center;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -.06em;
+  color: rgba(220, 233, 255, .6);
+}
+
+.hidden-twin-selected {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.hidden-twin-selected > span,
+.hidden-twin-selected > h3,
+.hidden-twin-selected > p {
+  grid-column: 2;
+}
+
+.hidden-twin-selected .hidden-twin-portrait-featured {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  width: 155px;
+  height: 155px;
+  margin: 0;
+}
+
+.hidden-twin-selected h3 {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .hidden-twin-selected {
+    grid-template-columns: 95px 1fr;
+    gap: 12px;
+  }
+
+  .hidden-twin-selected .hidden-twin-portrait-featured {
+    width: 95px;
+    height: 115px;
+  }
+
+  .hidden-twin-portrait {
+    height: 210px;
+  }
+}
+
+
+/* NBA_DNA_STAGE35_1_START */
+
+/*
+  HIDDEN TWIN — EDITORIAL REFINEMENT
+  Light, compact, data-first presentation.
+  Scoped exclusively to #hidden-twin.
+*/
+
+#hidden-twin.hidden-twin {
+  --ht-ink: #182a35;
+  --ht-muted: #637583;
+  --ht-line: #dce3e6;
+  --ht-blue: #467ab8;
+  --ht-surface: #ffffff;
+  --ht-soft: #f4f7f8;
+
+  background: #ffffff;
+  color: var(--ht-ink);
+  border-top: 1px solid var(--ht-line);
+  border-bottom: 1px solid var(--ht-line);
+  padding: 52px 0 60px;
+  min-height: 0;
+  box-shadow: none;
+}
+
+#hidden-twin .hidden-twin-inner {
+  width: min(1120px, calc(100% - 64px));
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#hidden-twin .hidden-twin-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 26px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--ht-line);
+  color: var(--ht-muted);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+#hidden-twin .hidden-twin-header {
+  max-width: none;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: left;
+}
+
+#hidden-twin .hidden-twin-kicker {
+  margin: 0 0 10px;
+  color: var(--ht-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+#hidden-twin .hidden-twin-header h2 {
+  margin: 0;
+  color: var(--ht-ink);
+  font-size: clamp(44px, 5.4vw, 76px);
+  line-height: .98;
+  font-weight: 850;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+}
+
+#hidden-twin .hidden-twin-header h2 em {
+  color: var(--ht-blue);
+  font-style: normal;
+}
+
+#hidden-twin .hidden-twin-intro {
+  max-width: 670px;
+  margin: 16px 0 0;
+  color: var(--ht-muted);
+  font-size: clamp(14px, 1.35vw, 17px);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+#hidden-twin .hidden-twin-search-panel {
+  margin: 0 0 22px;
+  padding: 22px 24px;
+  background: var(--ht-soft);
+  border: 1px solid var(--ht-line);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+#hidden-twin .hidden-twin-search-panel label {
+  display: block;
+  margin: 0 0 12px;
+  color: var(--ht-ink);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+#hidden-twin .hidden-twin-search-panel input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin: 0;
+  padding: 11px 15px;
+  background: #fff;
+  color: var(--ht-ink);
+  border: 1px solid #cbd6dc;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#hidden-twin .hidden-twin-search-panel input::placeholder {
+  color: #81909b;
+}
+
+#hidden-twin .hidden-twin-search-panel input:focus-visible {
+  outline: 2px solid var(--ht-blue);
+  outline-offset: 2px;
+}
+
+#hidden-twin .hidden-twin-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+#hidden-twin .hidden-twin-options button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+  min-height: 57px;
+  padding: 10px 13px;
+  background: #fff;
+  color: var(--ht-ink);
+  border: 1px solid var(--ht-line);
+  border-radius: 2px;
+  box-shadow: none;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease;
+}
+
+#hidden-twin .hidden-twin-options button:hover,
+#hidden-twin .hidden-twin-options button.is-selected {
+  background: #edf4fb;
+  border-color: var(--ht-blue);
+  color: var(--ht-ink);
+  transform: none;
+}
+
+#hidden-twin .hidden-twin-options button span {
+  color: var(--ht-ink);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+#hidden-twin .hidden-twin-options button small {
+  color: var(--ht-muted);
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+#hidden-twin .hidden-twin-results {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#hidden-twin .hidden-twin-selected {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+  align-items: center;
+  justify-items: start;
+  min-height: 116px;
+  margin: 0 0 22px;
+  padding: 12px 18px;
+  background: #f5f8fa;
+  border: 1px solid var(--ht-line);
+  border-left: 3px solid var(--ht-blue);
+  border-radius: 2px;
+  text-align: left;
+  box-shadow: none;
+}
+
+#hidden-twin .hidden-twin-selected .hidden-twin-portrait-featured {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 90px;
+  height: 90px;
+  max-width: 90px;
+  margin: 0;
+  border-radius: 2px;
+  border: 0;
+  background: #e6ecef;
+  overflow: hidden;
+}
+
+#hidden-twin .hidden-twin-selected > span {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--ht-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+#hidden-twin .hidden-twin-selected h3 {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 2px 0;
+  color: var(--ht-ink);
+  font-size: clamp(22px, 3vw, 31px);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+}
+
+#hidden-twin .hidden-twin-selected p {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+  color: var(--ht-muted);
+  font-size: 12px;
+}
+
+#hidden-twin .hidden-twin-result-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 0 0 11px;
+  border-bottom: 1px solid var(--ht-line);
+  color: var(--ht-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .11em;
+}
+
+#hidden-twin .hidden-twin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+#hidden-twin .hidden-twin-card,
+#hidden-twin .hidden-twin-card:first-child {
+  min-width: 0;
+  margin: 0;
+  padding: 17px;
+  background: #fff;
+  color: var(--ht-ink);
+  border: 1px solid var(--ht-line);
+  border-top: 3px solid var(--ht-blue);
+  border-radius: 2px;
+  box-shadow: none;
+  transform: none;
+}
+
+#hidden-twin .hidden-twin-card:hover {
+  border-color: #b9cbd8;
+  border-top-color: var(--ht-blue);
+  box-shadow: none;
+  transform: none;
+}
+
+#hidden-twin .hidden-twin-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 12px;
+  color: var(--ht-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .09em;
+}
+
+#hidden-twin .hidden-twin-portrait {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  max-width: none;
+  margin: 0 0 14px;
+  overflow: hidden;
+  background: #edf1f3;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+#hidden-twin .hidden-twin-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+#hidden-twin .hidden-twin-portrait-fallback {
+  color: var(--ht-muted);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#hidden-twin .hidden-twin-card h3 {
+  margin: 0 0 4px;
+  color: var(--ht-ink);
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+#hidden-twin .hidden-twin-team {
+  margin: 0 0 14px;
+  color: var(--ht-muted);
+  font-size: 11px;
+}
+
+#hidden-twin .hidden-twin-distance {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 15px;
+  padding: 12px 0;
+  border-top: 1px solid var(--ht-line);
+  border-bottom: 1px solid var(--ht-line);
+  background: transparent;
+  border-radius: 0;
+}
+
+#hidden-twin .hidden-twin-distance strong {
+  color: var(--ht-ink);
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+#hidden-twin .hidden-twin-distance span {
+  color: var(--ht-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-align: right;
+}
+
+#hidden-twin .hidden-twin-explanation {
+  color: var(--ht-ink);
+}
+
+#hidden-twin .hidden-twin-explanation h4 {
+  margin: 15px 0 7px;
+  color: var(--ht-blue);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+#hidden-twin .hidden-twin-explanation > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #edf0f2;
+  color: var(--ht-ink);
+  font-size: 11px;
+}
+
+#hidden-twin .hidden-twin-explanation small {
+  color: var(--ht-muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+#hidden-twin .hidden-twin-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 145px;
+  margin: 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px dashed #cbd6dc;
+  border-radius: 2px;
+  box-shadow: none;
+  text-align: center;
+}
+
+#hidden-twin .hidden-twin-empty span {
+  color: var(--ht-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+#hidden-twin .hidden-twin-empty p {
+  max-width: 440px;
+  margin: 10px 0 0;
+  color: var(--ht-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#hidden-twin .hidden-twin-method {
+  max-width: none;
+  margin: 22px 0 0;
+  padding: 16px 0 0;
+  color: var(--ht-muted);
+  border-top: 1px solid var(--ht-line);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  #hidden-twin .hidden-twin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #hidden-twin .hidden-twin-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  #hidden-twin.hidden-twin {
+    padding: 36px 0 44px;
+  }
+
+  #hidden-twin .hidden-twin-inner {
+    width: calc(100% - 32px);
+  }
+
+  #hidden-twin .hidden-twin-eyebrow,
+  #hidden-twin .hidden-twin-result-heading {
+    flex-wrap: wrap;
+  }
+
+  #hidden-twin .hidden-twin-header h2 {
+    font-size: clamp(40px, 11vw, 58px);
+  }
+
+  #hidden-twin .hidden-twin-search-panel {
+    padding: 16px;
+  }
+
+  #hidden-twin .hidden-twin-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #hidden-twin .hidden-twin-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #hidden-twin .hidden-twin-card:last-child {
+    grid-column: auto;
+  }
+
+  #hidden-twin .hidden-twin-selected {
+    grid-template-columns: 76px minmax(0, 1fr);
+    column-gap: 13px;
+    padding: 12px;
+  }
+
+  #hidden-twin .hidden-twin-selected .hidden-twin-portrait-featured {
+    width: 76px;
+    height: 76px;
+  }
+
+  #hidden-twin .hidden-twin-portrait {
+    height: 180px;
+  }
+}
+
+/* NBA_DNA_STAGE35_1_END */
+

@@ -1,0 +1,121 @@
+
+/* NBA DNA LAB — STAGE 29B / THE DNA THREAD */
+
+.dna-thread {
+  --thread-navy: #172B43;
+  --thread-steel: #315D73;
+  --thread-copper: #C18A57;
+  box-sizing: border-box;
+  padding: clamp(44px, 6vw, 90px) clamp(22px, 5vw, 72px);
+  scroll-margin-top: 80px;
+}
+
+.dna-thread *,
+.dna-thread *::before,
+.dna-thread *::after {
+  box-sizing: border-box;
+}
+
+.dna-thread-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dna-thread-light {
+  background: #F7F7F5;
+  color: #172B43;
+}
+
+.dna-thread-steel {
+  background: #E2E9ED;
+  color: #172B43;
+}
+
+.dna-thread-navy {
+  background: #172B43;
+  color: #FFFFFF;
+}
+
+.dna-thread-index {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: .16em;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: #8E6239;
+  margin-bottom: 20px;
+}
+
+.dna-thread-navy .dna-thread-index {
+  color: #D5B18C;
+}
+
+.dna-thread h2 {
+  max-width: 980px;
+  margin: 0 0 22px;
+  color: inherit;
+  font-size: clamp(32px, 4.7vw, 66px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.dna-thread h2 em {
+  font-style: normal;
+  color: #315D73;
+}
+
+.dna-thread-navy h2 em {
+  color: #D5B18C;
+}
+
+.dna-thread p {
+  max-width: 710px;
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.7;
+  margin: 0 0 24px;
+  color: #435469;
+}
+
+.dna-thread-navy p {
+  color: #DCE5EC;
+}
+
+.dna-thread-link {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 2px solid #C18A57;
+  color: #172B43;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-decoration: none;
+}
+
+.dna-thread-link:hover {
+  color: #315D73;
+}
+
+.dna-thread-footnote {
+  display: block;
+  max-width: 720px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(49,93,115,.2);
+  font-size: 12px;
+  line-height: 1.6;
+  color: #52687B;
+}
+
+.dna-thread-navy .dna-thread-footnote {
+  color: #C8D6E0;
+  border-color: rgba(255,255,255,.2);
+}
+
+@media (max-width: 680px) {
+  .dna-thread h2 {
+    letter-spacing: -.025em;
+  }
+}
+

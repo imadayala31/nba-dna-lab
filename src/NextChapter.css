@@ -1,0 +1,342 @@
+
+.nc-root {
+  background: #f7f6f2;
+  color: #1b252e;
+  padding: 96px 28px 90px;
+  font-family: inherit;
+}
+
+.nc-root * {
+  box-sizing: border-box;
+}
+
+.nc-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nc-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c9cac6;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .13em;
+}
+
+.nc-overline {
+  margin: 70px 0 25px;
+  color: #66717a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.nc-hero h2 {
+  margin: 0 0 60px;
+  font-size: clamp(55px, 9vw, 125px);
+  font-weight: 850;
+  letter-spacing: -.075em;
+  line-height: .91;
+}
+
+.nc-hero h2 em,
+.nc-footer h3 em {
+  color: #63798b;
+  font-style: normal;
+}
+
+.nc-hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 35px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #c9cac6;
+}
+
+.nc-hero-bottom p {
+  max-width: 580px;
+  margin: 0;
+  font-size: clamp(19px, 2.4vw, 29px);
+  line-height: 1.45;
+}
+
+.nc-hero-bottom span,
+.nc-intro > span,
+.nc-chapter-label,
+.nc-takeaway span,
+.nc-roadmap-heading > span,
+.nc-roadmap-item > span,
+.nc-methodology-heading > span,
+.nc-footer > span,
+.nc-footer-bottom > span {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.nc-hero-bottom span {
+  text-align: right;
+  color: #69737a;
+}
+
+.nc-intro,
+.nc-chapter {
+  display: grid;
+  grid-template-columns: 225px minmax(0, 1fr);
+  gap: 40px;
+  padding: 80px 0;
+  border-bottom: 1px solid #c9cac6;
+}
+
+.nc-intro > span {
+  color: #69737a;
+}
+
+.nc-intro > p {
+  margin: 0;
+  max-width: 820px;
+  font-size: clamp(23px, 3vw, 36px);
+  font-weight: 550;
+  line-height: 1.45;
+  letter-spacing: -.035em;
+}
+
+.nc-chapter-label {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  color: #687178;
+}
+
+.nc-chapter-label strong {
+  color: #364d60;
+  font-size: 25px;
+}
+
+.nc-chapter-content h3 {
+  margin: 0 0 30px;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -.055em;
+}
+
+.nc-chapter-content > p {
+  max-width: 760px;
+  color: #4b535a;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.nc-takeaway {
+  margin-top: 38px;
+  padding: 12px 0 12px 25px;
+  border-left: 3px solid #63798b;
+}
+
+.nc-takeaway span {
+  color: #516778;
+}
+
+.nc-takeaway p {
+  max-width: 730px;
+  margin-bottom: 0;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.nc-roadmap {
+  padding: 105px 0;
+  border-bottom: 1px solid #c9cac6;
+}
+
+.nc-roadmap-heading > span {
+  color: #63798b;
+}
+
+.nc-roadmap-heading h3 {
+  margin: 25px 0;
+  font-size: clamp(44px, 6.5vw, 85px);
+  line-height: .98;
+  letter-spacing: -.065em;
+}
+
+.nc-roadmap-heading > p {
+  max-width: 720px;
+  color: #566068;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.nc-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 42px;
+  margin-top: 50px;
+}
+
+.nc-roadmap-item {
+  padding: 25px 0 35px;
+  border-top: 1px solid #c9cac6;
+}
+
+.nc-roadmap-item > span {
+  color: #63798b;
+}
+
+.nc-roadmap-item h4 {
+  margin: 16px 0;
+  font-size: 25px;
+  letter-spacing: -.04em;
+}
+
+.nc-roadmap-item p {
+  max-width: 470px;
+  color: #566068;
+  line-height: 1.8;
+}
+
+.nc-methodology {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  padding: 100px 0;
+  border-bottom: 1px solid #c9cac6;
+}
+
+.nc-methodology-heading > span {
+  color: #63798b;
+}
+
+.nc-methodology-heading h3 {
+  margin: 25px 0;
+  font-size: clamp(34px, 4vw, 57px);
+  line-height: 1.05;
+  letter-spacing: -.06em;
+}
+
+.nc-methodology-copy > p {
+  margin: 0 0 22px;
+  color: #4b535a;
+  line-height: 1.8;
+}
+
+.nc-source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 32px 0;
+  padding: 24px 0;
+  border-top: 1px solid #c9cac6;
+  border-bottom: 1px solid #c9cac6;
+}
+
+.nc-source-list strong {
+  margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.nc-source-list code {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.nc-note {
+  font-size: 14px;
+  color: #707980 !important;
+}
+
+.nc-footer {
+  padding-top: 115px;
+}
+
+.nc-footer > span {
+  color: #69737a;
+}
+
+.nc-footer h3 {
+  margin: 35px 0 70px;
+  font-size: clamp(40px, 6.5vw, 90px);
+  line-height: 1;
+  letter-spacing: -.07em;
+}
+
+.nc-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #c9cac6;
+}
+
+.nc-footer-bottom p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.nc-footer-bottom span {
+  text-align: right;
+  color: #69737a;
+}
+
+@media (max-width: 760px) {
+  .nc-root {
+    padding: 60px 20px;
+  }
+
+  .nc-topline {
+    flex-wrap: wrap;
+  }
+
+  .nc-overline {
+    margin-top: 45px;
+  }
+
+  .nc-hero-bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nc-hero-bottom span {
+    text-align: left;
+  }
+
+  .nc-intro,
+  .nc-chapter,
+  .nc-methodology {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 55px 0;
+  }
+
+  .nc-roadmap {
+    padding: 65px 0;
+  }
+
+  .nc-roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nc-footer {
+    padding-top: 75px;
+  }
+
+  .nc-footer-bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nc-footer-bottom span {
+    text-align: left;
+  }
+}
+

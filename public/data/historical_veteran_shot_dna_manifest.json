@@ -1,0 +1,58 @@
+{
+  "season": "2024-25",
+  "source": "ESPN",
+  "historical_fallback_only": true,
+  "coordinate_geometry_validated": false,
+  "players": [
+    {
+      "athlete_id": "6606",
+      "player": "Damian Lillard",
+      "season": "2024-25",
+      "competition": "REGULAR SEASON",
+      "coverage": "PARTIAL_VERIFIED",
+      "attempts": 992,
+      "matched_games": 58,
+      "json_url": "/data/shot_dna_2024_25/player_6606.json"
+    },
+    {
+      "athlete_id": "2991230",
+      "player": "Fred VanVleet",
+      "season": "2024-25",
+      "competition": "REGULAR SEASON",
+      "coverage": "PARTIAL_VERIFIED",
+      "attempts": 733,
+      "matched_games": 58,
+      "json_url": "/data/shot_dna_2024_25/player_2991230.json"
+    },
+    {
+      "athlete_id": "6442",
+      "player": "Kyrie Irving",
+      "season": "2024-25",
+      "competition": "REGULAR SEASON",
+      "coverage": "PARTIAL_VERIFIED",
+      "attempts": 945,
+      "matched_games": 50,
+      "json_url": "/data/shot_dna_2024_25/player_6442.json"
+    },
+    {
+      "athlete_id": "3136196",
+      "player": "Trey Lyles",
+      "season": "2024-25",
+      "competition": "REGULAR SEASON",
+      "coverage": "PARTIAL_VERIFIED",
+      "attempts": 374,
+      "matched_games": 69,
+      "json_url": "/data/shot_dna_2024_25/player_3136196.json"
+    },
+    {
+      "athlete_id": "4396993",
+      "player": "Tyrese Haliburton",
+      "season": "2024-25",
+      "competition": "REGULAR SEASON",
+      "coverage": "PARTIAL_VERIFIED",
+      "attempts": 1006,
+      "matched_games": 73,
+      "json_url": "/data/shot_dna_2024_25/player_4396993.json"
+    }
+  ]
+}
